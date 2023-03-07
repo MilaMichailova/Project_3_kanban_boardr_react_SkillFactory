@@ -7,16 +7,15 @@ const Main = (props) => {
   return (
     <main className={css.main}>
       <Routes>
-        {/* <Route exact path={"/"}> попытка исправить смотрела как тут
-        https://reactrouter.com/en/main/components/routes */}
-        <Route exact path="/" element={<Main />}>
+        <Route path="/*" element={<Board {...props} />} />
+        <Route path=":taskId/" element={<TaskDetail {...props} />} />
+
+        {/* <Route exact path={"/"}>
           <Board {...props} />
         </Route>
-        {/* <Route path={"/tasks/:taskId"}> попытка исправить смотрела как тут
-        https://reactrouter.com/en/main/components/routes */}
-        <Route path="/tasks/:taskId" element={<TaskDetail />}>
+        <Route path={"/tasks/:taskId"}>
           <TaskDetail {...props} />
-        </Route>
+        </Route>{" "} */}
       </Routes>
     </main>
   );
