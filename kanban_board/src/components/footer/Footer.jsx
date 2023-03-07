@@ -17,13 +17,14 @@ function Footer(props) {
         })}
       </div>
       <div className={css.copy}>
-        Created by{" "}
+        Kanban board by
+        {/* <NAME>, <YEAR> */}{" "}
         <a
-          href="https://github.com/ytokarevskaya"
+          href="https://www.google.com/search?q=%D1%82%D0%B5%D1%81%D1%82&oq=%D1%82%D0%B5%D1%81%D1%82&aqs=chrome..69i57j69i59.4550j0j7&sourceid=chrome&ie=UTF-8"
           target="_blank"
           rel="noreferrer"
         >
-          @ytokarevskaya
+          @test
         </a>
       </div>
     </footer>

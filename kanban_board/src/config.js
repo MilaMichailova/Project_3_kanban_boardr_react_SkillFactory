@@ -1,19 +1,22 @@
 const LIST_TYPES = {
   BACKLOG: "backlog",
+  READY: "Ready",
   IN_PROGRESS: "inProgress",
-  DONE: "done",
+  FINISHED: "Finished",
 };
 
 const LIST_COPY = {
   [LIST_TYPES.BACKLOG]: "Backlog",
+  [LIST_TYPES.READY]: "Ready",
   [LIST_TYPES.IN_PROGRESS]: "In progress",
-  [LIST_TYPES.DONE]: "Done",
+  [LIST_TYPES.FINISHED]: "Finished",
 };
 
 const LIST_COLORS = {
-  [LIST_TYPES.BACKLOG]: "#b95959",
-  [LIST_TYPES.IN_PROGRESS]: "#4b69b1",
-  [LIST_TYPES.DONE]: "#a0b959",
+  [LIST_TYPES.BACKLOG]: "#FFFFFF",
+  [LIST_TYPES.READY]: "#FFFFFF",
+  [LIST_TYPES.IN_PROGRESS]: "#FFFFFF",
+  [LIST_TYPES.FINISHED]: "#FFFFFF",
 };
 
 export { LIST_TYPES, LIST_COPY, LIST_COLORS };
